@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Alaa Ezzeddine | Online English lessons for adults</title>
+<meta name="description" content="One-to-one live video English lessons for adults with a TESOL and TEFL certified instructor. Book a free 30-minute call.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Source+Sans+3:wght@400;600&display=swap">
+<style>
+:root{--ink:#14283A;--paper:#FBFCFD;--mist:#EAF0F8;--blue:#2D5BE3;--sun:#F5C542;--line:#D5DEEA;--muted:#4C5F73;--btn-bg:#2D5BE3;--btn-fg:#fff;--bub-me:#2D5BE3;--bub-me-fg:#fff}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--ink:#EAF0F8;--paper:#0F1B28;--mist:#16273A;--blue:#8FADFF;--line:#2A3D52;--muted:#A9B8C9;--btn-bg:#8FADFF;--btn-fg:#0F1B28;--bub-me:#8FADFF;--bub-me-fg:#0F1B28}}
+:root[data-theme="dark"]{--ink:#EAF0F8;--paper:#0F1B28;--mist:#16273A;--blue:#8FADFF;--line:#2A3D52;--muted:#A9B8C9;--btn-bg:#8FADFF;--btn-fg:#0F1B28;--bub-me:#8FADFF;--bub-me-fg:#0F1B28}
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 1.0625rem/1.6 "Source Sans 3",system-ui,-apple-system,"Segoe UI",sans-serif}
+h1,h2,h3{font-family:"Bricolage Grotesque","Segoe UI",system-ui,sans-serif;line-height:1.1;margin:0}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--blue);outline-offset:3px}
+.wrap{max-width:68rem;margin:0 auto;padding:0 1.25rem}
+header{border-bottom:1px solid var(--line)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding-top:.9rem;padding-bottom:.9rem}
+.brand{font:800 1.2rem "Bricolage Grotesque",system-ui,sans-serif;text-decoration:none}
+nav{display:flex;align-items:center;gap:1.4rem}
+nav a{text-decoration:none;font-weight:600}
+nav a:hover{text-decoration:underline}
+.btn{display:inline-block;background:var(--btn-bg);color:var(--btn-fg);font-weight:600;text-decoration:none;padding:.8rem 1.35rem;border-radius:.6rem}
+.btn:hover{filter:brightness(1.08)}
+.btn.ghost{background:transparent;color:var(--ink);border:2px solid var(--line)}
+.btn.small{padding:.5rem .95rem}
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:3rem;align-items:center;padding:4.5rem 0 4rem}
+.hero h1{font-size:clamp(2.4rem,5.4vw,4rem);font-weight:800;letter-spacing:-.02em}
+.hero p.lead{font-size:1.25rem;max-width:34rem;margin:1.2rem 0 0}
+.hero p.cred{color:var(--muted);margin:.8rem 0 0}
+.cta{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:1.8rem}
+.chat{display:flex;flex-direction:column;gap:.9rem;background:var(--mist);border:1px solid var(--line);border-radius:1.2rem;padding:1.4rem}
+.msg{max-width:92%;padding:.8rem 1rem;border-radius:1rem;font-size:1rem;line-height:1.45;opacity:0;animation:pop .5s ease forwards}
+.msg b{display:block;font-size:.85rem;margin-bottom:.15rem;color:var(--muted)}
+.msg.t{align-self:flex-start;background:var(--paper);border:1px solid var(--line);border-bottom-left-radius:.25rem}
+.msg.s{align-self:flex-end;background:var(--bub-me);color:var(--bub-me-fg);border-bottom-right-radius:.25rem}
+.msg.s b{color:inherit;opacity:.85}
+.msg.fix{border-left:5px solid var(--sun)}
+.msg:nth-child(1){animation-delay:.3s}.msg:nth-child(2){animation-delay:1.3s}.msg:nth-child(3){animation-delay:2.4s}
+@keyframes pop{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+section{padding:3.5rem 0;border-top:1px solid var(--line)}
+section h2{font-size:clamp(1.8rem,3.5vw,2.5rem);font-weight:800;letter-spacing:-.01em}
+section .sub{color:var(--muted);max-width:40rem;margin:.7rem 0 0}
+.why{display:grid;grid-template-columns:repeat(auto-fit,minmax(15rem,1fr));gap:2rem;margin-top:2rem}
+.why div{border-top:4px solid var(--blue);padding-top:.9rem}
+.why h3{font-size:1.25rem;margin-bottom:.4rem}
+.why p{margin:0;color:var(--muted)}
+.progs{display:grid;grid-template-columns:repeat(auto-fit,minmax(19rem,1fr));gap:0 3rem;margin-top:2rem}
+.prog{padding:1rem 0;border-bottom:1px solid var(--line)}
+.prog h3{font-size:1.15rem}
+.prog p{margin:.25rem 0 0;color:var(--muted)}
+.fav{display:inline-block;font:600 .85rem "Source Sans 3",sans-serif;background:var(--sun);color:#14283A;border-radius:99px;padding:.05rem .6rem;margin-left:.5rem;vertical-align:middle}
+.plans{display:grid;grid-template-columns:repeat(auto-fit,minmax(13rem,1fr));gap:1.2rem;margin-top:2rem}
+.plan{border:2px solid var(--line);border-radius:1rem;padding:1.4rem;display:flex;flex-direction:column;gap:.35rem}
+.plan.rec{border-color:var(--blue);background:var(--mist)}
+.plan h3{font-size:1.15rem}
+.price{font:800 2.6rem "Bricolage Grotesque",system-ui,sans-serif;line-height:1}
+.plan p{margin:0;color:var(--muted)}
+.tag{font-weight:600;color:var(--blue)}
+.note{margin-top:1.4rem;color:var(--muted);max-width:46rem}
+dl{display:grid;grid-template-columns:minmax(8rem,12rem) 1fr;gap:1rem 2rem;margin:2rem 0 0}
+dt{font-family:"Bricolage Grotesque",system-ui,sans-serif;font-weight:600;font-size:1.1rem}
+dd{margin:0;color:var(--muted)}
+.contact{background:var(--mist)}
+.contact .cta{margin-top:1.4rem}
+.contact address{font-style:normal;margin-top:1.4rem;color:var(--muted)}
+footer{padding:1.6rem 0;border-top:1px solid var(--line);color:var(--muted);font-size:.95rem}
+@media (max-width:760px){
+nav a:not(.btn){display:none}
+.hero{grid-template-columns:1fr;gap:2rem;padding:2.5rem 0}
+dl{grid-template-columns:1fr;gap:.2rem}
+dd{margin-bottom:.8rem}
+}
+@media (prefers-reduced-motion:reduce){.msg{animation:none;opacity:1}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header>
+<div class="wrap">
+<a class="brand" href="#top">Alaa Ezzeddine</a>
+<nav aria-label="Main">
+<a href="#programs">Programs</a>
+<a href="#plans">Plans</a>
+<a href="#lessons">How lessons work</a>
+<a class="btn small" href="#contact">Free trial call</a>
+</nav>
+</div>
+</header>
+
+<main id="top">
+<div class="wrap hero">
+<div>
+<h1>Learn English live, one-to-one, with a certified teacher.</h1>
+<p class="lead">Online lessons for adults. Real conversation, real feedback, real progress, with no automated courses in between.</p>
+<p class="cred">TESOL and TEFL certified. Students from every country and time zone.</p>
+<div class="cta">
+<a class="btn" href="https://wa.me/96176067634?text=Hello%20Alaa%2C%20I%27d%20like%20to%20book%20the%20free%2030-minute%20trial%20call.">Book your free 30-minute call</a>
+<a class="btn ghost" href="#plans">See plans and prices</a>
+</div>
+</div>
+<div class="chat" role="img" aria-label="Example of a lesson: the teacher gives feedback on how to open a meeting in English">
+<div class="msg t"><b>Alaa</b>Let's practice opening a meeting. I'm your team. Go ahead.</div>
+<div class="msg s"><b>You</b>Hello everyone. Today I want to talk about the budget.</div>
+<div class="msg t fix"><b>Alaa</b>Clear. Now try: "Thanks for joining. I'd like to walk you through the budget." It sounds more natural in a meeting.</div>
+</div>
+</div>
+
+<section>
+<div class="wrap">
+<h2>Why learn with a person</h2>
+<div class="why">
+<div><h3>Personal, not automated</h3><p>You speak with an experienced instructor who listens, corrects you and adjusts each lesson to your goals.</p></div>
+<div><h3>Up to three programs per lesson</h3><p>Combine areas such as Conversational English, Meetings and Email writing in a single 45-minute session.</p></div>
+<div><h3>Flexible, seven days a week</h3><p>Lessons are scheduled around your time zone, and missed sessions can be rescheduled.</p></div>
+</div>
+</div>
+</section>
+
+<section id="programs">
+<div class="wrap">
+<h2>What you can study</h2>
+<p class="sub">Choose up to three programs and combine them in one lesson.</p>
+<div class="progs">
+<div class="prog"><h3>General English<span class="fav">Student favorite</span></h3><p>Everyday English, grammar, vocabulary, reading, writing, listening and speaking.</p></div>
+<div class="prog"><h3>Conversational English<span class="fav">Student favorite</span></h3><p>Fluency, natural conversation, confidence, pronunciation and real-life communication.</p></div>
+<div class="prog"><h3>English for Meetings<span class="fav">Student favorite</span></h3><p>Take part, ask for clarification, and agree or disagree professionally.</p></div>
+<div class="prog"><h3>English for Interviews<span class="fav">Student favorite</span></h3><p>Job-interview answers, professional vocabulary and confidence.</p></div>
+<div class="prog"><h3>Professional Writing and Email English<span class="fav">Student favorite</span></h3><p>Business emails with clear tone, structure and wording.</p></div>
+<div class="prog"><h3>Business English</h3><p>Professional vocabulary, workplace language and business situations.</p></div>
+<div class="prog"><h3>Business English Communication</h3><p>Meetings, discussions, negotiations and professional speaking.</p></div>
+<div class="prog"><h3>Professional and Workplace English</h3><p>Communicate with offices, teams, clients, colleagues and international partners.</p></div>
+<div class="prog"><h3>English for Presentations</h3><p>Structure your ideas and present clearly to an audience.</p></div>
+<div class="prog"><h3>Speaking, Pronunciation and Fluency</h3><p>Accent clarity, pronunciation and speaking practice.</p></div>
+<div class="prog"><h3>Grammar and Vocabulary Development</h3><p>Practical grammar, vocabulary growth and accurate English.</p></div>
+</div>
+</div>
+</section>
+
+<section id="plans">
+<div class="wrap">
+<h2>Plans and prices</h2>
+<p class="sub">Every lesson is 45 minutes by live video. Start with a free 30-minute call, then choose what suits you.</p>
+<div class="plans">
+<div class="plan"><h3>Single session</h3><div class="price">$30</div><p>1 session</p></div>
+<div class="plan"><h3>Weekly</h3><div class="price">$50</div><p>3 sessions per week</p><span class="tag">Student favorite</span></div>
+<div class="plan"><h3>Full month</h3><div class="price">$200</div><p>12 sessions</p><span class="tag">Student favorite</span></div>
+<div class="plan rec"><h3>3-month package</h3><div class="price">$500</div><p>36 sessions, plus bonus conversation sessions</p><span class="tag">Recommended</span></div>
+</div>
+<p class="note">All plans are paid in advance and are non-refundable. If you cannot attend, your sessions can be rescheduled within a following period instead of being lost.</p>
+</div>
+</section>
+
+<section id="lessons">
+<div class="wrap">
+<h2>How lessons work</h2>
+<dl>
+<dt>Free trial call</dt><dd>A 30-minute introduction to learn your goals and English level before lessons begin.</dd>
+<dt>Online format</dt><dd>Live video on Zoom, WhatsApp, FaceTime or Webex. Other platforms can be used depending on your country.</dd>
+<dt>Schedule</dt><dd>Monday to Sunday, arranged for your time zone. Three sessions a week is the standard, and you can add or reduce sessions.</dd>
+<dt>Practice test and certificate</dt><dd>A formal practice test shows your progress and the areas that need more work. You receive a certificate from the instructor when you finish.</dd>
+</dl>
+</div>
+</section>
+
+<section id="contact" class="contact">
+<div class="wrap">
+<h2>Start with a free call</h2>
+<p class="sub">Tell me your goals and I'll suggest the right programs for you.</p>
+<div class="cta">
+<a class="btn" href="https://wa.me/96176067634?text=Hello%20Alaa%2C%20I%27d%20like%20to%20book%20the%20free%2030-minute%20trial%20call.">Message me on WhatsApp</a>
+<a class="btn ghost" href="mailto:alaaezzeddineleb@gmail.com?subject=Free%20trial%20call">Send an email</a>
+</div>
+<address>WhatsApp: +961 76 067 634<br>Email: <a href="mailto:alaaezzeddineleb@gmail.com">alaaezzeddineleb@gmail.com</a></address>
+</div>
+</section>
+</main>
+
+<footer>
+<div class="wrap">&copy; 2026 Alaa Ezzeddine. TESOL and TEFL certified English instructor. Online lessons for adults worldwide.</div>
+</footer>
+</body>
+</html>
